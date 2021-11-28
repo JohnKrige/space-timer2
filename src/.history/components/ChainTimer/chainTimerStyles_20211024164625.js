@@ -1,0 +1,47 @@
+import styled from 'styled-components';
+
+export const ChainItemContainer = styled.div`
+    border: ${props => props.isActive ? '5px solid white' : ' '};
+    width: 700px;
+    margin: 30px 0;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background: rgb(47,60,150);
+    background: linear-gradient(90deg, rgba(47,60,150,1) 40%, rgba(164,18,83,1) 100%);
+
+    svg {
+        cursor: pointer;
+    }
+`;
+
+export const ChainItemBackground = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+`;
+
+
+export const TimeDisplayContainer = styled.div`
+    display: flex;
+`;
+
+export const TimeDisplay = styled.div`
+    background-color: white;
+    border-radius: 10px;
+    margin: 3px 2px 0 2px;
+    color: black !important;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+`;
+
+export const ButtonsBar = styled.div`
+    margin: 50px 0;
+`;

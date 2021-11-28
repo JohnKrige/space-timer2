@@ -1,0 +1,1 @@
+export const neatTimeDisplay = (time) => `${time}`.length < 2 ? `0${time}` : `${time}`;
