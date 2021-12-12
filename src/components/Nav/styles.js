@@ -8,8 +8,10 @@ export const NavItem = styled.li`
     align-items: center;
     justify-content: center;
     background-color: ${props => props.selected ? "#821e66" : "rgba(47,60,150,1)"};
-    padding: 10px 0;
+    padding: 0;
     border-radius: 15px 15px 0 0;
+    z-index: 5;
+    -webkit-tap-highlight-color: transparent;
 
 
     @media (min-width: 1024px) {
@@ -18,10 +20,12 @@ export const NavItem = styled.li`
         background-color: transparent;
     }
     
-    & div {
+    & a {
         font-size: ${props => props.selected && "16px"};
         text-align: center;
         color: white;
+        width: 100%;
+        padding 10px 0;
 
         @media (min-width: 1024px) {
             font-size: ${props => props.selected ? "28" : "24"}px;

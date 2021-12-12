@@ -10,8 +10,8 @@ import { getHMS } from '../../helpers/getHMS';
 
 import { CountdownTimerContainer, Header, Message, HeaderContainer } from './countdownTimerStyles';
 
-const startTime = 5000;
-const repeatStartTime = 2000;
+const startTime = 30000;
+const repeatStartTime = 5000;
 const audioBeep = new Audio(beep);
 const audioFinal = new Audio(timerFinish);
 

@@ -30,7 +30,7 @@ const Navbar = () => {
         return (
             <NavItem selected={selected} key={item.name}>
                 <NavLink to={`${item.ext}`}>
-                    <div style={{display: 'inline-block'}}>{item.name}</div>
+                    {item.name}
                 </NavLink>
             </NavItem>
         );
